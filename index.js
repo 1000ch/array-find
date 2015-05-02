@@ -16,9 +16,11 @@
 
   }
 
-  Array.prototype.find = function (predicate, context) {
-    return arrayFind(this, predicate, context);
-  };
+  if (!Array.prototype.find) {
+    Array.prototype.find = function (predicate, context) {
+      return arrayFind(this, predicate, context);
+    };
+  }
 
 })(this, function (array, predicate, context) {
 

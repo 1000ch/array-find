@@ -1,6 +1,6 @@
 {
   "name": "array-find",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polyfill for Array.prototype.find",
   "main": "index.js",
   "directories": {

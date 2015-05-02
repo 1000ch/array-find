@@ -1,7 +1,7 @@
 {
   "name": "array-find",
-  "version": "0.0.0",
-  "description": "[].find",
+  "version": "1.0.0",
+  "description": "Polyfill for Array.prototype.find",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/1000ch/array-find",
   "devDependencies": {
-    "tape": "^2.13.1"
+    "tape": "^4.0.0"
   },
   "testling": {
     "files": "test/*.js",

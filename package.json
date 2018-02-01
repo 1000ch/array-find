@@ -1,5 +1,5 @@
 {
-  "name": "array-find",
+  "name": "@1000ch/array-find",
   "version": "1.0.1",
   "description": "Polyfill for Array.prototype.find",
   "main": "index.js",

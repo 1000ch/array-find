@@ -1,29 +1,4 @@
-(function(root, arrayFind) {
-
-  if (typeof exports !== 'undefined') {
-
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = arrayFind;
-    }
-
-    exports.arrayFill = arrayFind;
-
-  } else if (typeof define === 'function' && define.amd) {
-
-    define([], function() {
-      return arrayFind;
-    });
-
-  }
-
-  if (!Array.prototype.find) {
-    Array.prototype.find = function (predicate, context) {
-      return arrayFind(this, predicate, context);
-    };
-  }
-
-})(this, function (array, predicate, context) {
-
+module.exports = function (array, predicate, context) {
   if (!Array.isArray(array)) {
     throw new TypeError('array is not a Array');
   }
@@ -41,5 +16,4 @@
   }
 
   return undefined;
-
-});
+}

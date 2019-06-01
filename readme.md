@@ -9,7 +9,7 @@ Polyfill for Array.prototype.find.
 Functionally:
 
 ```javascript
-var find = require('array-find');
+var find = require('@1000ch/array-find');
 
 function isPrimary(item, index, array) {
   var start = 2;
@@ -28,7 +28,7 @@ console.log(find([4, 5, 8, 10], isPrimary));
 From Array object:
 
 ```javascript
-require('array-find');
+require('@1000ch/array-find/shim');
 
 var array = [4, 5, 8, 10];
 
